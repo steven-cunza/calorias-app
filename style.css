@@ -1,0 +1,133 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-header-color:#4a43b3;
+    --light-body-color:#bdc5ce;
+    --dark-header-color:#111370;
+    --dark-body-color:#242b33;
+    --light-image-border-color: #000000;
+    --dark-image-border-color: #6e6e6e;
+}
+
+body {
+    background-color: var(--light-body-color);
+    font-family: 'Alata', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+.body-dark {
+    background-color: var(--dark-body-color);
+    font-family: 'Alata', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10%;
+    padding-left: 20px;
+    background-color: var(--light-header-color);
+}
+
+.header-dark {
+    display: flex;
+    color: #bdc5ce;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10%;
+    padding-left: 20px;
+    background-color: var(--dark-header-color);
+}
+
+.mode {
+    height: 90%;
+    width: 50px;
+}
+
+.mode:hover {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    height: 90%;
+    width: 100%;
+}
+
+.food {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 414px;
+}
+
+.food-image {
+    width: 45%;
+    height: 35%;
+    border: solid var(--light-image-border-color) 2px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.food-image-selected {
+    width: 45%;
+    height: 35%;
+    border: solid var(--light-image-border-color) 2px;
+    padding: 10px;
+    border-radius: 10px;   
+    background-color: #4a43b3; 
+}
+
+.food-image:hover {
+    cursor: pointer;
+}
+
+.food-image-dark {
+    width: 45%;
+    height: 35%;
+    border: solid var(--dark-image-border-color) 2px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.food-image-dark:hover {
+    cursor: pointer;
+}
+
+.food-image-dark-selected {
+    width: 45%;
+    height: 35%;
+    border: solid var(--light-image-border-color) 2px;
+    padding: 10px;
+    border-radius: 10px;   
+    background-color: #8f8f8f; 
+}
+
+.counter {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.counter-dark {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: #bdc5ce;
+}
